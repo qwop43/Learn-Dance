@@ -88,5 +88,78 @@ img {
 
 nav ul li a.active {
     font-weight: bold;
-    color: #ff9800; /* Колір для активного посилання */
+    color: #ff9800; 
+}
+
+/* Контейнери контактів */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.contact-card {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 45%;
+}
+
+.contact-card h3 {
+    color: #007bff;
+}
+
+.contact-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-card ul li {
+    margin: 5px 0;
+}
+
+.contact-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; 
+    padding: 20px;
+}
+
+.gallery-item {
+    width: 250px;
+    height: 320px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background: #f9f9f9;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px; /* Однакова висота всіх зображень */
+    object-fit: cover; /* Обрізання для гарного вигляду */
+    border-radius: 5px;
+}
+
+.gallery-item p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
 }

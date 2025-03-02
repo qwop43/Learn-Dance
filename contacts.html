@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Домашня</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="portfolio.html">Портфоліо</a></li>
+            <li><a href="contacts.html" class="active">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content">
+    <h1>Контакти</h1>
+
+    <h2>Як з нами зв’язатися?</h2>
+    <p>Ми завжди раді спілкуванню! Оберіть, з ким хочете зв’язатися:</p>
+
+    <div class="contacts-container">
+        <div class="contact-card">
+            <h2>Олександр</h2>
+            <p><strong>Телефон:</strong> +380 97 123 45 67</p>
+            <p><strong>Email:</strong> oleksandr@example.com</p>
+            <p>
+                <a href="https://www.instagram.com/oleksandr_dance" target="_blank" class="instagram-btn">
+                    📸 Instagram
+                </a>
+            </p>
+        </div>
+
+        <div class="contact-card">
+            <h2>Анна</h2>
+            <p><strong>Телефон:</strong> +380 66 987 65 43</p>
+            <p><strong>Email:</strong> anna@example.com</p>
+            <p>
+                <a href="https://www.instagram.com/anna_dance" target="_blank" class="instagram-btn">
+                    📸 Instagram
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <h2>Форма зворотного зв’язку</h2>
+    <form id="contactForm">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Відправити</button>
+    </form>
+
+    <p id="confirmationMessage" style="display: none; color: green; font-weight: bold;">
+        ✅ Дякуємо! Ваше повідомлення відправлено.
+    </p>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2025 Навчання танцям</p>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Запобігаємо переходу на нову сторінку
+    document.getElementById("confirmationMessage").style.display = "block"; 
+    this.reset();
+});
+</script>
+
+</body>
+</html>
