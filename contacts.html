@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакти</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,28 +19,28 @@
 </header>
 
 <div class="content">
-    <h1>Контакти</h1>
+    <h1 class="fade-in">Контакти</h1>
 
-    <h2>Як з нами зв’язатися?</h2>
-    <p>Ми завжди раді спілкуванню! Оберіть, з ким хочете зв’язатися:</p>
+    <h2 class="fade-in">Як з нами зв’язатися?</h2>
+    <p class="fade-in">Ми завжди раді спілкуванню! Оберіть, з ким хочете зв’язатися:</p>
 
     <div class="contacts-container">
         <div class="contact-card">
-            <h2>Олександр</h2>
-            <p><strong>Телефон:</strong> +380 97 123 45 67</p>
-            <p><strong>Email:</strong> oleksandr@example.com</p>
-            <p>
-                <a href="https://www.instagram.com/oleksandr_dance" target="_blank" class="instagram-btn">
+            <h2 class="fade-in">Олександр</h2>
+            <p class="fade-in"><strong>Телефон:</strong> +380 97 123 45 67</p>
+            <p class="fade-in"><strong>Email:</strong> oleksandr@example.com</p>
+            <p class="fade-in">
+                <a href="https://www.instagram.com/oleksandr_dance" target="_blank" class="instagram-btn" class="fade-in">
                     📸 Instagram
                 </a>
             </p>
         </div>
 
         <div class="contact-card">
-            <h2>Анна</h2>
-            <p><strong>Телефон:</strong> +380 66 987 65 43</p>
-            <p><strong>Email:</strong> anna@example.com</p>
-            <p>
+            <h2 class="fade-in">Анна</h2>
+            <p class="fade-in"><strong>Телефон:</strong> +380 66 987 65 43</p>
+            <p class="fade-in"><strong>Email:</strong> anna@example.com</p>
+            <p class="fade-in">
                 <a href="https://www.instagram.com/anna_dance" target="_blank" class="instagram-btn">
                     📸 Instagram
                 </a>
@@ -50,8 +48,8 @@
         </div>
     </div>
 
-    <h2>Форма зворотного зв’язку</h2>
-    <form id="contactForm">
+    <h2 class="fade-in">Форма зворотного зв’язку</h2>
+    <form id="contactForm" class="fade-in">
         <label for="name">Ім'я:</label>
         <input type="text" id="name" name="name" required>
 
@@ -75,7 +73,7 @@
 
 <script>
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Запобігаємо переходу на нову сторінку
+    event.preventDefault(); 
     document.getElementById("confirmationMessage").style.display = "block"; 
     this.reset();
 });

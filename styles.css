@@ -6,6 +6,36 @@ body {
     background-color: #f4f4f4;
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+
+h1.fade-in {
+    animation-delay: 0.3s;
+}
+
+p.fade-in {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-card:hover {
+    background: #e3f2fd;
+    transform: scale(1.05);
+}
 
 header {
     background-color: #333;
@@ -153,8 +183,8 @@ nav ul li a.active {
 
 .gallery-item img {
     width: 100%;
-    height: 200px; /* Однакова висота всіх зображень */
-    object-fit: cover; /* Обрізання для гарного вигляду */
+    height: 200px;
+    object-fit: cover; 
     border-radius: 5px;
 }
 
