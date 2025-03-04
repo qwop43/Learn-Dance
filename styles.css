@@ -121,7 +121,7 @@ nav ul li a.active {
     color: #ff9800; 
 }
 
-/* Контейнери контактів */
+
 .contact-container {
     display: flex;
     justify-content: space-around;
@@ -192,4 +192,37 @@ nav ul li a.active {
     font-size: 14px;
     color: #555;
     margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-card {
+        width: 80%;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery-item {
+        width: 90%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        position: relative;
+    }
 }
