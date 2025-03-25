@@ -3,13 +3,16 @@
 <html lang="uk">
 <head>
     <title>Про нас</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
 <header>
     <nav>
-        <ul>
+        <div class="menu-toggle" id="mobile-menu">
+            ☰
+        </div>
+        <ul class="nav-list">
             <li><a href="index.html">Домашня</a></li>
             <li><a href="about.html" class="active">Про нас</a></li>
             <li><a href="services.html">Послуги</a></li>
@@ -22,7 +25,7 @@
 <div class="content">
     <h1 class="fade-in">Про нас</h1>
     
-    <img  src="photo/dance-teachers.jpg" alt="Наші викладачі танців" class="team-photo">
+    <img  src="../photo/dance-teachers.jpg" alt="Наші викладачі танців" class="team-photo">
 
     <h2 class="fade-in">Хто ми?</h2>
     <p class="fade-in">Ми - професійні викладачі танців, які допомагають людям відкривати світ руху та ритму. Наші інструктори мають багаторічний досвід у різних стилях танцю та з радістю діляться своїми знаннями.</p>
@@ -46,6 +49,8 @@
 <footer class="footer">
     <p> Навчання танцям </p>
 </footer>
+
+<script src="../javascript/script.js"></script>
 
 </body>
 </html>
